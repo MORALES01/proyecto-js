@@ -85,21 +85,18 @@ function numeroAdivinar()
 {
 	var result = Math.floor(Math.random()*100)+1;
 	return result;
-}
-
+	}
 var numero = numeroAdivinar();
-var contador = 0;
+var contad = 0;
 
-while (true)
-{
-	contador = contador+1;
+	while (true){
+	contad = contad+1;
 	num2 = numeroAdivinar();
 	if (numero === num2)
-	{
-		alert("El numero inicial: "+numero);
-		alert("El numero adivinado: "+num2);
+{
+		alert("numero inicial: " + numero);
+		alert("numero adivinado: " + num2);
 		break;
 	}
 }
-
-alert("El numero intentos: "+contador);
+	alert("total intentos: " + contad);
