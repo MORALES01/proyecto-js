@@ -35,9 +35,11 @@ else if(parseInt(numerodeUsuario)< numeroAdivinar)
 	if (adivinoCorrectamente)
 	{
 		document.write ("<p> adivinaste</p>");
-	else {
-	document.write ("<p> no adivinaste</p>");
 	}
+	else {
+	document.write ("<p> no adivinaste</p>")
+	}
+
 	console.log("programa completado");
 
 
