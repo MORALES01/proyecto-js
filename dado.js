@@ -28,11 +28,21 @@ if(parseInt(numero1)> parseInt(numero2))
 }
 var result= max(10,6);
 	alert("El numero mayor Es:" + result);*/
-	function saludo(){
+	/*function saludo(){
 		 mensaje ="hola a todos";
 		alert(mensaje); 
 	}
 	var mensaje = "chao";
 	saludo();
 	alert(mensaje);
-	saludo();
+	saludo();*/
+
+	var num = prompt("ingrese un numero");
+	if (isNaN(num))
+	{
+		throw Error ("no es un numero valido");
+	}
+		else{ 
+			num = num * 0.5;}
+
+		alert("la mitad del numero es" + num);
