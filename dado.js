@@ -60,9 +60,9 @@ var limiteInferior = prompt("ingrese unlimite inferior pára el numeroAlAzar");
 alert(" su numero al Azar es: "+ numeroAlAzarHastaLimite(parseInt(limiteInferior),
 parseInt(limiteSuperior)));*/
 
-function numeroAlAzarEntreLimites(lim1,lim2)
+/*function numeroAlAzarEntreLimites(limite1,limite2)
 {
-	var num=Math.floor(Math.random()*(lim1-lim2))+lim2;
+	var num=Math.floor(Math.random()*(limite1-limite2))+limite2;
 	return num;
 }
 var limiteSuperior=prompt("Ingrese limite superior: ");
@@ -79,4 +79,27 @@ while (contador<10)
 var randomico = numeroAlAzarEntreLimites(parseInt(limiteSuperior),parseInt(limiteInferior));
 document.write(randomico+" ");
 contador++;
+}*/
+
+function numeroAdivinar()
+{
+	var result = Math.floor(Math.random()*100)+1;
+	return result;
 }
+
+var numero = numeroAdivinar();
+var contador = 0;
+
+while (true)
+{
+	contador = contador+1;
+	num2 = numeroAdivinar();
+	if (numero === num2)
+	{
+		alert("El numero inicial: "+numero);
+		alert("El numero adivinado: "+num2);
+		break;
+	}
+}
+
+alert("El numero intentos: "+contador);
