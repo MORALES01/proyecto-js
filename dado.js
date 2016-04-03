@@ -81,7 +81,7 @@ document.write(randomico+" ");
 contador++;
 }*/
 
-function numeroAdivinar()
+/*function numeroAdivinar()
 {
 	var result = Math.floor(Math.random()*100)+1;
 	return result;
@@ -99,4 +99,11 @@ var contad = 0;
 		break;
 	}
 }
-	alert("total intentos: " + contad);
+	alert("total intentos: " + contad);*/
+
+	console.log("incio del programa");
+	var html=';'
+	for (var i=1; i<10; i++){
+		html +="<div>"+i+"</div>";	}
+	document.write(html);
+	console.log("programa completado");
